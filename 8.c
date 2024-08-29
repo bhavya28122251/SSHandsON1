@@ -12,29 +12,43 @@ Close the file when end of file is reached.*/
 int main(){
 
 FILE *f=fopen("file","r");
+
 if(f==NULL){
-perror("File Empty");
+perror("File is  Empty");
 exit(0);
 }
 
 int a=fgetc(f);
 char buf[1024];
 int t=0;
-while(a!='\n'){
-while(a!='\n'){
+
+while(a!=EOF){
 buf[t]=a;
 t++;
+
+if(a=='\n' || t>=sizeof(buf)-1){
+write(1,buf,t);
+t=0;
+}
 a=fgetc(f);
 }
-buf[t++]='\n';
+if(t>0){
 write(1,buf,t);
-buf[0]='\0';
+
 }
 
-
+fclose(f);
 
 return 0;
 
 }
 
-/*Output:*/
+/*Output:
+bhavya@Bhavya:~/SSHandsOn1$ gcc 8.c
+bhavya@Bhavya:~/SSHandsOn1$ ./a.out
+Hello
+THis is Question 8.
+Bye.
+
+
+*/
