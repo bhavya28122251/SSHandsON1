@@ -1,6 +1,7 @@
-/*Name: Bhavya Joshi
-Roll no.: MT2024032
-19. Write a program to find out time taken to execute getpid system call. Use time stamp counter.*/
+/*Name: 19.c
+Author:Bhavya Joshi
+Description:19. Write a program to find out time taken to execute getpid system call. Use time stamp counter.
+Date: 29th Aug, 2024.*/
 
 #include<stdio.h>
 #include<sys/time.h>

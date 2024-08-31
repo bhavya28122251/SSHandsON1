@@ -1,8 +1,8 @@
 /*
-Name: Bhavya Joshi
-Roll no.: MT2024032
-Date: 30-8-24
-24. Write a program to create an orphan process.
+Name: 24.c
+Author:Bhavya Joshi
+Description:24. Write a program to create an orphan process.
+Date: 30th Aug, 2024.
 */
 
 #include <stdio.h>

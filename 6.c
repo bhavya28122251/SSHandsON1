@@ -1,12 +1,14 @@
-/*Name:Bhavya Joshi
-Reg no.:MT2024032
-6. Write a program to take input from STDIN and display on STDOUT. Use only read/write system calls
+/*Name: 6.c
+Author:Bhavya Joshi
+Description:6. Write a program to take input from STDIN and display on STDOUT. Use only read/write system calls
+Date:28th Aug,24
+
 */
 
 #include<stdio.h>
 #include<unistd.h>
 
-int main(int argc, char *argv[]){
+int main(int in, char* b[]){
 char arr[50];
 int read_arr=read(0,arr,20);
 printf("%d\n",read_arr);

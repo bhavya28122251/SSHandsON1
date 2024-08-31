@@ -1,7 +1,10 @@
-/*Name: Bhavya Joshi
-Reg no.: MT2024032
-1. Create the following types of a files using (i) shell command (ii) system call
-c. FIFO (mkfifo Library Function or mknod system call)*/
+/*Name:1c.c
+Author: Bhavya Joshi
+Description:1. Create the following types of a files using (i) shell command (ii) system call
+c. FIFO (mkfifo Library Function or mknod system call)
+Date:28th Aug,24
+
+*/
 
 #include<stdio.h>
 #include<sys/stat.h>

@@ -1,6 +1,8 @@
-/*Name: Bhavya Joshi
-Reg no.: MT2024032
-3. Write a program to create a file and print the file descriptor value. Use creat ( ) system call*/
+/*Name: 3.c
+Author: Bhavya Joshi
+Description:3. Write a program to create a file and print the file descriptor value. Use creat ( ) system call
+Date:28th Aug,24
+*/
 
 #include<stdio.h>
 #include<fcntl.h>

@@ -1,8 +1,8 @@
-/*Name: Bhavya Joshi
-Roll no.: MT2024032
-Date: 30-8-24
-22. Write a program, open a file, call fork, and then write to the file by both the child as well as the
+/*Name:22.c
+Author: Bhavya Joshi
+Description:22. Write a program, open a file, call fork, and then write to the file by both the child as well as the
 parent processes. Check output of the file.
+Date: 31st Aug, 2024.
 */
 
 #include <stdio.h>

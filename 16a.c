@@ -4,7 +4,7 @@ Name : 16a.c
 Author : Bhavya Joshi
 Description : Write a program to perform mandatory locking.
 a. Implement write lock 
-Date: 31th Aug, 2024.
+Date: 31st Aug, 2024.
 ============================================================================
 */
 

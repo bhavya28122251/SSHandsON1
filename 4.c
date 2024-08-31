@@ -1,6 +1,9 @@
-/*Name: Bhavya Joshi
-Reg no.:MT2024032
-4. Write a program to open an existing file with read write mode. Try O_EXCL flag also.*/
+/*Name: 4.c
+Author: Bhavya Joshi
+Description:4. Write a program to open an existing file with read write mode. Try O_EXCL flag also.
+Date:29th Aug,24
+
+*/
 
 #include<stdio.h>
 #include<unistd.h>

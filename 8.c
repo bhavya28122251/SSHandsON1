@@ -1,7 +1,9 @@
-/*Name:Bhavya Joshi
-Reg no.:MT2024032
-8. Write a program to open a file in read only mode, read line by line and display each line as it is read.
-Close the file when end of file is reached.*/
+/*Name:8.c
+Author:Bhavya Joshi
+Description:8. Write a program to open a file in read only mode, read line by line and display each line as it is read.
+Close the file when end of file is reached.
+Date:29th Aug,24
+*/
 
 #include<stdio.h>
 #include<unistd.h>

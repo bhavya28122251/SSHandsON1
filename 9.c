@@ -1,6 +1,6 @@
-/*Name:Bhavya Joshi
-Reg no.:MT2024032
-9. Write a program to print the following information about a given file.
+/*Name: 9.c
+Author:Bhavya Joshi
+Description:9. Write a program to print the following information about a given file.
 a. inode
 b. number of hard links
 c. uid
@@ -10,17 +10,20 @@ f. block size
 g. number of blocks
 h. time of last access
 i. time of last modification
-j. time of last change*/
+j. time of last change
+Date:28th Aug,24
+
+*/
 
 #include<stdio.h>
 #include<unistd.h>
 #include<time.h>
 #include<sys/stat.h>
 
-int main(int arg, char* args[]){
+int main(int in, char* arr[]){
 
 struct stat s;
-stat (args[1],&s);
+stat (arr[1],&s);
 printf("inode number: %ju\n ",s.st_ino);
 printf("Number of Hard Links: %ju\n",s.st_nlink);
 printf("UID: %u\n ",s.st_uid);

@@ -1,6 +1,8 @@
-/*Name: Bhavya Joshi
-Roll no.: MT2024032
-28. Write a program to get maximum and minimum real time priority.*/
+/*Name: 28.c
+Author:Bhavya Joshi
+Description:28. Write a program to get maximum and minimum real time priority.
+Date: 29th Aug, 2024.
+*/
 
 #include<stdio.h>
 #include<sched.h>

@@ -1,7 +1,10 @@
-/*Name: Bhavya Joshi
-Reg no.:MT2024032
-5. Write a program to create five new files with infinite loop. Execute the program in the background
-and check the file descriptor table at /proc/pid/fd.*/
+/*Name: 5.c
+Author: Bhavya Joshi
+Description:5. Write a program to create five new files with infinite loop. Execute the program in the background
+and check the file descriptor table at /proc/pid/fd.
+Date:29th Aug,24
+
+*/
 
 #include<stdio.h>
 #include<fcntl.h>

@@ -1,6 +1,8 @@
-/*Name:Bhavya Joshi
-Reg no.:MT2024032
-7. Write a program to copy file1 into file2 ($cp file1 file2).*/
+/*Name:7.c
+Author:Bhavya Joshi
+Description:7. Write a program to copy file1 into file2 ($cp file1 file2).
+Date:29th Aug,24
+*/
 
 #include<stdio.h>
 #include<unistd.h>
@@ -8,27 +10,27 @@ Reg no.:MT2024032
 #include<errno.h>
 #include<stdlib.h>
 
-int main(int argc, char* argv[]){
+int main(int in, char* arr[]){
 
-int file_7_1=open(argv[1],O_RDONLY);
+int file_7_1=open(arr[1],O_RDONLY);
 
 if(file_7_1<0){
 perror("Error opening file1");
 exit(0);
 }
 
-int file_7_2=open(argv[2],O_WRONLY|O_CREAT|O_EXCL,0600);
+int file_7_2=open(arr[2],O_WRONLY|O_CREAT|O_EXCL,0600);
 
 if(file_7_2<0){
 perror("Error opening file2");
 exit(0);
 }
 
-char arr[1024];
+char a[1024];
 int read_input;
 
-while((read_input=read(file_7_1,arr,sizeof(arr)))>0){
-write(file_7_2,arr,read_input);
+while((read_input=read(file_7_1,a,sizeof(a)))>0){
+write(file_7_2,a,read_input);
 }
 
 close(file_7_1);

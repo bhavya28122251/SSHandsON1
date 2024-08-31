@@ -1,9 +1,9 @@
 /*
-Name: Bhavya Joshi
-Roll no.: MT2024032
-Date: 30-8-24
-25. Write a program to create three child processes. The parent should wait for a particular child (use
+Name: 25.c
+Author: Bhavya Joshi
+Description:25. Write a program to create three child processes. The parent should wait for a particular child (use
 waitpid system call).
+Date: 31st Aug, 2024.
 */
 
 #include<stdio.h>

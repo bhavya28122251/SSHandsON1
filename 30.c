@@ -1,6 +1,8 @@
-/*Name: Bhavya Joshi
-Roll no.: MT2024032
-30. Write a program to run a script at a specific time using a Daemon process.*/
+/*Name:30.c
+Author: Bhavya Joshi
+Description:30. Write a program to run a script at a specific time using a Daemon process.
+Date: 29th Aug, 2024.
+*/
 
 #include<stdio.h>
 #include<unistd.h>

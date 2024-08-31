@@ -1,7 +1,8 @@
-/*Name: Bhavya Joshi
-Roll no.: MT2024032
-29. Write a program to get scheduling policy and modify the scheduling policy (SCHED_FIFO,
+/*Name: 29.c
+Author:Bhavya Joshi
+Description:29. Write a program to get scheduling policy and modify the scheduling policy (SCHED_FIFO,
 SCHED_RR).
+Date: 29th Aug, 2024.
 */
 
 #include<stdio.h>
