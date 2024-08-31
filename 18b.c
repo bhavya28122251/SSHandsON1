@@ -7,7 +7,7 @@ a. Implement write lock
 b. Implement read lock
 Create three records in a file. Whenever you access a particular record, first lock it then modify/access
 to avoid race condition.
-Date: 31th Aug, 2024.
+Date: 31st Aug, 2024.
 ============================================================================
 */
 
@@ -86,7 +86,7 @@ int main() {
                 db_initialize(file_desc);
         }
 
-        printf("Enter the train number (1-%d) to lock\n",TRAIN);
+        printf("Enter the train number to lock\n");
         scanf("%d",&tr);
 
         train_lock(file_desc,tr);
@@ -107,7 +107,7 @@ int main() {
 ============================================================================
 Output:
 bhavya@Bhavya:~/SSHandsOn1$ ./a.out
-Enter the train number (1-3) to lock
+Enter the train number to lock
 2
 Attempting to lock the train
 Accquired lock on the train no. 2

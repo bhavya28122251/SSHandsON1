@@ -7,7 +7,7 @@ a. Implement write lock
 b. Implement read lock
 Create three records in a file. Whenever you access a particular record, first lock it then modify/access
 to avoid race condition.
-Date: 31th Aug, 2024.
+Date: 31st Aug, 2024.
 ============================================================================
 */
 
@@ -39,6 +39,7 @@ int train_lock(int file_desc, int tr) {
     	l.l_start = TRAIN_SIZE*(tr-1);
     	l.l_len = TRAIN_SIZE; 
     	l.l_pid = getpid();   
+	
 	
 	printf("Attempting to lock the train\n");
     
@@ -86,7 +87,10 @@ int main() {
         	db_initialize(file_desc);
     	}
 
-   	printf("Enter the train number (1-%d) to lock\n",TRAIN);
+   	printf("This is a ticket booking system.\n"); 
+	printf("You can book your ticket from 3 trains\n");
+
+	printf("Enter the train number to lock it\n");
     	scanf("%d",&tr);
 
    	train_lock(file_desc,tr);
@@ -103,6 +107,7 @@ int main() {
 	lseek(file_desc,TRAIN_SIZE*(tr-1),SEEK_SET);
     	read(file_desc,&db[tr-1],sizeof(db[0]));
     	
+	printf("You have booked :\n");
 	printf("Train no: %d\n",db[tr-1].tr);
     	printf("Ticket no: %d\n", db[tr-1].t);
 
@@ -116,15 +121,18 @@ int main() {
 Output:
 bhavya@Bhavya:~/SSHandsOn1$ cc 18a.c
 bhavya@Bhavya:~/SSHandsOn1$ ./a.out
-Enter the train number (1-3) to lock
+This is a ticket booking system.
+You can book your ticket from 3 trains
+Enter the train number to lock it
 2
 Attempting to lock the train
 Accquired lock on the train no. 2
 Press Enter to unlock the train
 
 Released the lock on the train no. 2.
+You have booked :
 Train no: 2
-Ticket no: 1
+Ticket no: 2
 
 ============================================================================
 */

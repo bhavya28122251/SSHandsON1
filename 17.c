@@ -6,7 +6,7 @@ Description : Write a program to simulate online ticket reservation. Implement w
 Write a program to open a file, store a ticket number and exit. Write a separate program, to
 open the file, implement write lock, read the ticket number, increment the number and print
 the new ticket number then close the file. 
-Date: 31th Aug, 2024.
+Date: 31st Aug, 2024.
 ============================================================================
 */
 
